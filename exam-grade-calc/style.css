@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    font-family: Sans-Serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 auto 5em auto;
+}
+
+table {
+    table-layout: fixed;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+input[type=number] {
+    width: 97%;
+    text-align: center;  
+    step: 0.01;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+input[type=reset] {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#status {
+    background-color: green;
+    padding: 0.4em 0.75em;
+    color: white;
+}

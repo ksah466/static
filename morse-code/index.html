@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Morse Code Converter</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script defer="" src="main.js"></script>
+</head>
+
+<body>
+    <header class="app__header header">
+        <div class="header__inner">
+            <div class="header__item">
+                <a class="header__brand" href="/">Morse Code</a>
+            </div>
+        </div>
+    </header>
+
+
+    <article class="app__pipe pipe">
+        <header class="pipe__header">
+            <div class="container">
+                <p class="pipe__description">Morse code, named for the inventor of the telegraph Samuel F. B. Morse, is
+                    a
+                    method of transmitting text information as a series of on-off tones, lights, or clicks.</p>
+            </div>
+        </header>
+
+
+        <div class="pipe__scrollable">
+            <div class="pipe__content"><div class="pipe__part-pipe">
+                    <div class="pipe__drop-handle"></div>
+                </div>
+                <div class="pipe__part-brick pipe__part-brick--viewer" >
+                    <div class="brick viewer viewer-text" role="region" aria-label="Text viewer">
+                        <header class="brick__header">
+                            <ul class="brick__actions">
+                                <li class="brick__action-item"><span class="brick__action brick__action--active">View</span></li>
+                            </ul>
+                            <h3 class="brick__title">Plaintext</h3>
+                        </header>
+                        <div class="brick__settings">
+                            <div class="form"></div>
+                        </div>
+                        <div class="brick__content"><textarea class="viewer-text__textarea" aria-label="Content" spellcheck="false" style="height: 160px;"></textarea></div>
+                        <footer class="brick__status brick__status--success">
+                            <div class="brick__status-icon"></div>
+                            <div class="brick__status-message"></div>
+                        </footer>
+                    </div>
+                </div><div class="pipe__part-pipe">
+                    <div class="pipe__drop-handle"></div>
+                </div>
+                <div class="pipe__part-brick pipe__part-brick--encoder" >
+                    <div class="brick encoder" role="region" aria-label="Morse code encoder">
+                        <header class="brick__header">
+                            <ul class="brick__actions">
+                                <li class="brick__action-item"><a id="encodeBtn" class="brick__action brick__action--active" >Encode</a></li>
+                                <li class="brick__action-item"><a id="decodeBtn" class="brick__action" >Decode</a></li>
+                            </ul>
+                            <h3 class="brick__title">Morse code</h3>
+                        </header>
+                        <div class="brick__settings">
+                            <div class="form">
+                                <div class="field field-enum field-enum--default field--first" data-width="12"><label class="field__label" for="u1">Variant</label>
+                                    <div class="field-enum__field"><select class="field-enum__select" id="u1">
+                                            <option value="0" title="">English</option>
+                                        </select></div>
+                                </div>
+                                <div class="field field-enum field-enum--default field--first" data-width="12"><label class="field__label" for="u2">Representation</label>
+                                    <div class="field-enum__field"><select class="field-enum__select" id="u2">
+                                            <option value="0" title="">Code</option>
+                                        </select></div>
+                                </div>
+                                <div class="field field-text field--first" data-width="4"><label class="field__label" for="u3">Short</label>
+                                    <div class="field-text__field"><input class="field-text__input" id="u3" type="text" spellcheck="false"></div>
+                                </div>
+                                <div class="field field-text" data-width="4"><label class="field__label" for="u4">Long</label>
+                                    <div class="field-text__field"><input class="field-text__input" id="u4" type="text" spellcheck="false"></div>
+                                </div>
+                                <div class="field field-text" data-width="4"><label class="field__label" for="u5">Space</label>
+                                    <div class="field-text__field"><input class="field-text__input" id="u5" type="text" spellcheck="false"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="brick__status brick__status--forward">
+                            <div class="brick__status-icon"></div>
+                            <div class="brick__status-message">Encoded 168 chars in 0.68ms</div>
+                        </footer>
+                    </div>
+                </div><div class="pipe__part-pipe">
+                    <div class="pipe__drop-handle"></div>
+                </div>
+                <div class="pipe__part-brick pipe__part-brick--viewer" >
+                    <div class="brick viewer viewer-text" role="region" aria-label="Text viewer">
+                        <header class="brick__header">
+                            <ul class="brick__actions">
+                                <li class="brick__action-item"><span class="brick__action brick__action--active">View</span></li>
+                            </ul>
+                            <h3 class="brick__title">Ciphertext</h3>
+                        </header>
+                        <div class="brick__settings">
+                            <div class="form"></div>
+                        </div>
+                        <div class="brick__content"><textarea class="viewer-text__textarea" aria-label="Content" spellcheck="false" style="height: 176px;"></textarea></div>
+                        <footer class="brick__status brick__status--success">
+                            <div class="brick__status-icon"></div>
+                            <div class="brick__status-message"></div>
+                        </footer>
+                    </div>
+                </div><div class="pipe__part-pipe">
+                    <div class="pipe__drop-handle"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+</body></html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>KBot v1.1</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="gradient-border" id="box">KBot v1.1<br>
+        <div id="container">
+            <button class="learn-more">
+                <div class="circle">
+                    <span class="icon arrow"></span>
+                </div>
+                <p class="button-text">Start</p>
+            </button>
+        </div>
+    </div>
+
+    <div id="wave" style="display: none;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <section id="name-input" style="display: none;">
+        <form action="" autocomplete="off">
+            <h1>Please Enter Your First Name</h1>
+            <div class="input-container">
+                <input id="name" class="input" type="text" pattern=".+" required />
+                <label class="label" for="name">Name</label>
+            </div>
+        </form>
+    </section>
+
+    <div class="wrapper" id="bot-input" style="display: none;">
+        <form>
+            <h1>KBOT</h1>
+            <hr class="sep" />
+            <div>
+                <h5 id="userMsg">[Your messages will be displayed here]</h5>
+                <h5 id="aiMsg">[AI messages will be displayed here]</h5>
+            </div>
+            <hr class="sep" />
+
+            <div class="group">
+                <textarea type="textarea" rows="5" required="required"></textarea>
+                <span class="highlight"></span><span class="bar"></span>
+                <label>Message</label>
+            </div>
+            <div class="btn-box">
+                <button class="btn btn-submit" type="submit">send</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

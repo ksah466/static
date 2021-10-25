@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Semester Grade Calculator v1</title>
+
+<body>
+
+	<h1>Semester Grade Calculator v1</h1>
+
+	<div>
+		<table style="width:50%" onchange="update()">
+			<tr>
+				<th>1st Quarter</th>
+				<th>2nd Quarter</th>
+				<th>Exam</th>
+				<th>Semester</th>
+			</tr>
+			<tr>
+				<td><input type="radio" name="solver" value="q1"></td>
+				<td><input type="radio" name="solver" value="q2"></td>
+				<td><input type="radio" name="solver" value="exam" checked></td>
+				<th><input type="radio" name="solver" value="final"></th>
+			</tr>
+			<tr>
+				<td><input type="number" name="q1" min="0" max="100"></td>
+				<td><input type="number" name="q2" min="0" max="100"></td>
+				<td><input type="number" name="exam" min="0" max="100"></td>
+				<td><input type="number" name="final" min="0" max="100"></td>
+			</tr>
+
+		</table>
+	</div>
+
+	<div> <input type="reset">
+	</div>
+
+	<em><span id="status">Select the one you want to calculate, and enter valid inputs </span></em>
+
+
+
+
+	<script src="main.js"></script>
+</body>
+
+</html>

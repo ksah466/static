@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Crypt</title>
+
+	<script src="encondings.js"></script>
+<body>
+
+	<h1>Crypt v0.4</h1>
+
+	<em><span id="status">All good</span></em>
+
+	<p><textarea id="input" cols="80" rows="11" onkeyup="update()" onchange="update()" autofocus=""></textarea></p>
+
+	<p class="arrow">↑↓</p>
+
+	<p>
+		<form action="">
+			<select id="crypt" onchange="update()">
+				<option value="rot13" selected="">ROT13</option>
+				<option value="binary">Binary</option>
+				<option value="base64">Base64</option>
+			</select>
+
+			<span id="mode" onchange="update()">
+				<input type="radio" name="mode" value="auto" checked> Automatic
+				<input type="radio" name="mode" value="encrypt"> Encrypt
+				<input type="radio" name="mode" value="decrypt"> Decrypt
+			</span>
+		</form>
+	</p>
+
+
+	<p class="arrow">↑↓</p>
+
+	<p><textarea id="output" cols="80" rows="11" readonly=""></textarea></p>
+
+	<script src="crypt.js"></script>
+</body>
+
+</html>
